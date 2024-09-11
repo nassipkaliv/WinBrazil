@@ -51,6 +51,20 @@ header .header_logo, header .wrapper {
   padding-top: 60px;
 }
 
+.intro-block:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(../assets/img/Bgpic.png) no-repeat 50% 50% / cover;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+  margin-top: 50px;
+}
+
 .first-screen {
   padding: 70px 0 20px;
   display: -ms-flexbox;
@@ -118,10 +132,6 @@ header .header_logo, header .wrapper {
   margin-bottom: 0;
 }
 
-.table-head_legal, .table_head_flag, .table_head_secure, .table-head_bonus {
-  position: relative;
-  padding-left: 25px;
-}
 
 .table-head_legal:before {
   position: absolute;
@@ -151,4 +161,59 @@ header .header_logo, header .wrapper {
   width: 21px;
   height: 21px;
   background: url(../assets/icons/CurrencyCircleDollar.svg) no-repeat;
+}
+
+.table-head_bonus:before {
+  position: absolute;
+  content: "";
+  top: -2px;
+  left: 0;
+  width: 21px;
+  height: 21px;
+  background: url(../assets/icons/CalendarBlank.svg) no-repeat;
+}
+
+.table-head_legal, .table-head_flag, .table-head_secure, .table-head_bonus {
+  position: relative;
+  padding-left: 25px;
+}
+
+.table-head_left .bonus-date {
+  background: rgba(74, 92, 123, 0.15);
+  border: 1px solid rgba(74, 92, 123, 0.4);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 1px 5px;
+  font-weight: 400;
+  font-size: 12px !important;
+  line-height: 18px !important;
+  color: #749bff !important;
+}
+
+.table-head {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.table-head .table-left_right {
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.table-head .table-left_right p {
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 14px;
+  color: hsla(0, 0%, 100%, 0.5);
+  padding-left: 15px;
 }

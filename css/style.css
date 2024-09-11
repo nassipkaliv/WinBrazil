@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-width: 1px;
+}
+
 body {
   background: #040d20;
   font-family: 'Nunito Sans', system-ui;
@@ -216,4 +223,65 @@ header .header_logo, header .wrapper {
   line-height: 14px;
   color: hsla(0, 0%, 100%, 0.5);
   padding-left: 15px;
+}
+
+.table {
+  margin-bottom: 40px;
+}
+
+.table_row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: justify !important;
+  justify-content: space-evenly !important;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+}
+
+.table_row_title {
+  background: rgba(130, 148, 177, 0.07);
+  padding: 3px 0;
+}
+
+.table_col-number {
+  width: 5%;
+}
+
+.table_row_title p {
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  font-weight: 400;
+  color: rgba(130, 148, 177, 0.8);
+}
+
+.table_col-site {
+  width: 25%;
+  padding: 15px;
+}
+
+.table_col-bonus {
+  width: 19%;
+  text-align: center;
+  padding-right: 25px;
+}
+
+.table_col-rating {
+  width: 20%;
+  padding: 15px 35px 15px 15px;
+  text-align: center;
+}
+
+.table_col-btn {
+  width: 16%;
+  padding: 15px 0;
+}
+
+.table_row_title .table_title {
+  padding: 0;
 }

@@ -50,3 +50,105 @@ header .header_logo, header .wrapper {
   position: relative;
   padding-top: 60px;
 }
+
+.first-screen {
+  padding: 70px 0 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+}
+
+.first-screen-content {
+  color: #fff;
+  max-width: 720px;
+}
+
+.first-screen h1 {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.first-screen p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.first-screen .first-screen-content .table-head_date {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  background: -webkit-linear-gradient(180deg, #ffde91, #ffde91 0.01%, #ff8b49), -webkit-linear-gradient(0deg, #040d20, #040d20);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 576px) {
+  .first-screen .first-screen-content .table-head_date {
+      display: none;
+  }
+}
+
+.table-head_left {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.table-head_left p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #fff;
+  margin-right: 32px;
+  margin-bottom: 0;
+}
+
+.table-head_legal, .table_head_flag, .table_head_secure, .table-head_bonus {
+  position: relative;
+  padding-left: 25px;
+}
+
+.table-head_legal:before {
+  position: absolute;
+  content: "";
+  top: -2px;
+  left: 0;
+  width: 21px;
+  height: 21px;
+  background: url(../assets/icons/ShieldCheck.svg) no-repeat;
+}
+
+.table-head_flag:before {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  content: "";
+  width: 21px;
+  height: 21px;
+  background: url(../assets/icons/DeviceMobile.svg) no-repeat;
+}
+
+.table-head_secure:before {
+  position: absolute;
+  content: "";
+  top: -2px;
+  left: 0;
+  width: 21px;
+  height: 21px;
+  background: url(../assets/icons/CurrencyCircleDollar.svg) no-repeat;
+}

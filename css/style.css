@@ -831,3 +831,22 @@ a {
   height: 20px;
   cursor: pointer;
 }
+
+footer {
+  background: #040d20;
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  text-align: center;
+  padding: 50px 0;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid #8294b145;
+}
+
+footer p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+}
